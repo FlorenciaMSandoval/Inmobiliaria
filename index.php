@@ -1,0 +1,36 @@
+<?php
+
+
+require_once 'config/config.php';
+require_once 'core/routes.php';
+require_once 'config/conexion.php';
+require_once "controllers/InmobiliariaController.php";
+
+/*$control=new InmobiliariaController();
+$control->index();*/
+
+if(isset($_GET['c'])){
+
+    $controlador= cargarControlador($_GET['c']);
+
+    if(isset($_GET['a'] ) ){/*si existe a*/
+        if(isset($_GET['id'])==null){
+            cargarAccion($controlador,$_GET['a']); 
+        }else{
+            cargarAccion($controlador,$_GET['a'],$_GET['id']); 
+        }
+
+
+       //cargarAccion($controlador,$_GET['a']);  
+    }else{
+        cargarAccion($controlador,ACCION_PRINCIPAL);
+    }
+
+}else{
+    $controlador= cargarControlador(CONTROL_PRINCIPAL);
+    $accionTmp=ACCION_PRINCIPAL;
+    $controlador->$accionTmp();
+}
+
+ ?>
+

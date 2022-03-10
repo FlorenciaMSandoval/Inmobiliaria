@@ -1,0 +1,56 @@
+.informacion{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+h1{
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
+#reg{
+    background-color: rgb(4, 4, 57);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+   
+}
+
+.formu .formu-tabla{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#reg{
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#contacto{
+    background-color: rgb(4, 4, 57);
+    color: white;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+th{
+    color: #ed563b;
+}
+
+#importante{
+    color: #ed563b;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.table label{
+
+    color: white;
+}
